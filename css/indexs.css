@@ -1,0 +1,184 @@
+*{
+    
+    font-family: cursive;
+    padding: 0%;
+    background-color: white;
+  }
+  
+  
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    height: 60px;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  /* Style for the company name */
+  .company-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
+  
+  /* Style for the content section */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+  }
+  
+  /* Style for the content title */
+  .content-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #444;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  
+  /* Style for the content description */
+  .content-description {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #555;
+    text-shadow: 1px 1px 1px #fff;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+  
+  /* Style for the "Get Started" button */
+  .get-started-button {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: green;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .get-started-button:hover {
+  color: #ff0;
+  background-color: #444;
+  border-radius: 5px;
+  }
+  
+  /* Style for the slim scroll bar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    color: black;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ff0;
+    background-color: #444;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .social-media-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-media-links a:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-media-links img {
+    max-width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: #999;
+  }
+  
+
+
+
+
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .bookcard {
+    width: 20%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  .bookcard:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bookcard img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .bookcard p {
+    margin-top: 10px;
+  }
+  

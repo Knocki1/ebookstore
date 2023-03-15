@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Store</title>
+    <link rel="stylesheet" href="./css/indexs.css" />
+  </head>
+  <body>
+     <!-- Navbar -->
+
+     <div class="navbar">
+      <div class="company-name">Book Store</div>
+      <div class="button-container">
+        
+        <a href="./login.php">Login</a>
+        <a href="./register.php">Sign Up</a>
+        <a href="./adminlogin.php">Admin login</a>
+        
+      </div>
+    </div>
+
+    
+
+    <!-- Content Section -->
+    <section id="about">
+      <img src="./images/1.png" alt="" style="margin-top: 80px; width: 100%;">
+      <div class="content">
+        <div class="content-title">Welcome to our Free Ebook Store</div>
+        <div class="content-description">
+          We offer a wide selection of ebooks that you can read online for free.
+          Whether you're looking for a classic novel, a new release, or something
+          in between, you're sure to find it here. So why wait? Start reading now!
+        </div>
+        <a href="./login.php"
+          ><button class="get-started-button">Get Started</button></a
+        >
+      </div>
+    </section>
+
+
+
+    <section id="genre">
+      <div class="content">
+        <div class="content-title">Books genre we offer</div>
+        <div >
+
+          <div class="books" onclick="genreClicked()">
+            <div class="bookcard">
+              <img src="./images/techgenre.png" alt="techgenre" >
+              <p>Technology</p>
+            </div>
+            <div class="bookcard" onclick="genreClicked()">
+              <img src="./images/computer science.jpg" alt="techgenre" >
+              <p>Computer science</p>
+            </div>
+            <div class="bookcard" onclick="genreClicked()">
+              <img src="./images/programming.png" alt="techgenre" >
+              <p>Programming</p>
+            </div>
+            <div class="bookcard" onclick="genreClicked()">
+              <img src="./images/software development.jpg" alt="techgenre" >
+              <p>Software development</p>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Mission Section -->
+    <section id="mission">
+      <div class="content">
+        <div class="content-title">Our Mission</div>
+        <div class="content-description">
+          <p>
+            Our mission is to make books accessible to everyone. We believe that
+            reading should be a right, not a privilege, and that's why we offer a
+            wide selection of ebooks that you can read online for free. We want
+            to help spread knowledge and promote literacy around the world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developers Section -->
+    <section id="developers">
+      <div class="content">
+        <div class="content-title">Developers</div>
+        <div>
+          <div class="books">
+            <div class="bookcard" onclick="openInsta('https://www.instagram.com/prem.sagar.mishra/')">
+              <img src="./images/prem.jpeg" alt="techgenre" >
+              <p>Prem Sagar Mishra</p>
+            </div>
+            <div class="bookcard" onclick="openInsta('https://www.instagram.com/_jerrin_d_george_/')">
+              <img src="./images/jerrin.jpg" alt="techgenre" >
+              <p>jerrin D George</p>
+            </div>
+            <div class="bookcard" onclick="openInsta('https://www.instagram.com/mdzubair_74/')"> 
+              <img src="./images/zubair.jpeg" alt="techgenre" >
+              <p>Md Zubair</p>
+            </div>
+            <div class="bookcard" onclick="openInsta('https://www.instagram.com/i_madhu_sudhan/')">
+              <img src="./images/madhu.jpeg" alt="techgenre" >
+              <p>Madhu Sudhan</p>
+            </div>
+            <div class="bookcard" onclick="openInsta('https://www.instagram.com/harshith.d.yadav/')">
+              <img src="./images/harshitd.jpeg" alt="techgenre" >
+              <p>Harshit D</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="social-media-links">
+          <a href="https://www.linkedin.com/in/prem-sagar-mishra-526872229/"><img src="./css/linkedin.png" alt="linkedin" width="30px"></a>
+          
+          <a href="https://github.com/Knocki1"><img src="./css/github.png" alt="github" width="30px"></a>
+        </div>
+        <div class="copyright">
+          &copy; 2023 The Boys. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <script>
+
+
+      function genreClicked(){
+        alert("Login to get books")
+      }
+
+function openInsta(link){
+  window.location.href = link;
+
+}
+      // Custom slim scroll bar
+      window.onload = function () {
+        var scrollbarStyle = `
+			::-webkit-scrollbar {
+				width: 6px;
+				background-color: #f5f5f5;
+			}
+
+			::-webkit-scrollbar-thumb {
+				background-color: #ccc;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+				background-color: #aaa;
+			}
+		`;
+
+        var scrollbar = document.createElement("style");
+        scrollbar.innerHTML = scrollbarStyle;
+        document.head.appendChild(scrollbar);
+      };
+      function smoothScroll(event) {
+  event.preventDefault(); // Prevent default behavior of anchor tag
+  const targetId = event.target.getAttribute("href"); // Get the target section ID
+  const targetSection = document.querySelector(targetId); // Get the target section element
+  const targetOffsetTop = targetSection.offsetTop; // Get the target section's distance from the top of the page
+  const scrollOptions = {
+    top: targetOffsetTop,
+    behavior: "smooth",
+  };
+  window.scrollTo(scrollOptions); // Scroll to the target section with smooth behavior
+}
+
+    </script>
+  </body>
+</html>
