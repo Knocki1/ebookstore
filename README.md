@@ -10,7 +10,7 @@ Download ebooks: users can download ebooks in PDF format
 
 Installation
 
-Clone the repository: git clone https://github.com/your-username/ebook-store.git
+Clone the repository: git clone https://github.com/Knocki1/ebookstore.git
 Import the SQL file included in the db folder of the project to setup the databases
 
 Credits
